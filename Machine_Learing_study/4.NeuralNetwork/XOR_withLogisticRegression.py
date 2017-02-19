@@ -42,3 +42,4 @@ with tf.Session() as sess:
     accuracy = tf.reduce_mean(tf.cast(correct_prediction,'float'))
     print (sess.run([hypothesis, tf.floor(hypothesis+0.5), correct_prediction, accuracy], feed_dict={X:x_data, Y:y_data}))
     print ("Accuracy:", accuracy.eval(feed_dict={X:x_data, Y:y_data}))
+
