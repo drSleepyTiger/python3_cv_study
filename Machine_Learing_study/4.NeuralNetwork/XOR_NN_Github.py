@@ -31,7 +31,7 @@ b3_hist = tf.summary.histogram("biases3", b3)
 
 y_hist = tf.summary.histogram("y", Y)
 
-# Hypotheses
+# Hypothesis
 with tf.name_scope("layer2") as scope:
     L2 = tf.sigmoid(tf.matmul(X, W1) + b1)
 
